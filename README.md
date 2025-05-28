@@ -4,7 +4,7 @@
 
 ### Codespace instruction
 - Clone this repo
-- move to cloned directory
+- `cd` to cloned directory
 - `docker compose up -d --build`
 - `docker compose exec aptos bash`
 
