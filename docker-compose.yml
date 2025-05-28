@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  aptos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aptos-container
+    volumes:
+      - ./:/contracts
+    working_dir: /contracts
+    tty: true
