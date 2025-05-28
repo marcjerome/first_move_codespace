@@ -9,7 +9,12 @@
 - `docker compose exec aptos bash`
 
 ### Account Creation
-- aptos init
+- `aptos init`
+
+### Move.toml
+- Check your account address via `cat .aptos/config.yaml`
+- Copy account value
+- Paste it in `hello_blockchain` line in Move.toml (e.g hello_blockchain = '0x1234')
 
 ### Move Project Creation
 - `aptos move init --name hello_blockchain` (Since we have the directories in this repo, we don't need to execute this anymore)
@@ -18,5 +23,5 @@
 - `aptos move test`
 
 ### Deploy
-- `aptos move deploy`
+- `aptos move publish`
 
